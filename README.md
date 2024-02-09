@@ -7,15 +7,13 @@ This assignment is designed to help you apply what you've learned about inherita
 
 ### Details
 * Review material on inheritance.  If you need a reference, try the tutorial found here https://www.tutorialspoint.com/java/java_inheritance.htm (Links to an external site.)
-* Download the project template from https://github.com/UltimateSandbox/project-2-initial.git (Links to an external site.)
+* Fork, then clone the project template from https://github.com/UltimateSandbox/project-2-initial.git (Links to an external site.)
 * Complete the following programming assignment:
-* Design and implement a set of classes that define a series of three-dimensional geometric shapes.  The design is entirely up to you, but must include the following... 
+* Design and implement a set of classes, based on the UML below, that define a series of three-dimensional geometric shapes.
 * For each shape, store fundamental data about its size and provide methods to access and modify this data. 
 * For each shape, provide appropriate methods to compute each shape’s surface area and volume given the appropriate inputs. 
-* Your design must include at least one abstract class and one interface (but may include more if desired.)
-* In your design, consider how shapes are related and thus where inheritance can be implemented. 
+* You should implement at least four shapes, the 3 specified in the UML, plus one other of your choice.
 * Modify the driver class provided to instantiate several shapes of differing types and exercise the behavior you provided.  (i.e. print out it's state using the toString() method.)
-* You should implement at least four shapes, including a sphere, which is given (but will need to be modified).
 ```
 Hint:  
 There are many types of 3 dimensional geometric shapes
@@ -28,7 +26,6 @@ Hint:
 Use the auto-generate feature in the IDE 
 to generate the toString() method and add the necessary data to it.
 ```
-An example of a 3 shape design is given below.  You may use these names and/or shapes or come up with your own appropriate naming convention.  It's up to you!
 ![example-uml.png](example-uml.png)
 
 ### Expected Output
@@ -40,7 +37,9 @@ Cylinder {height=4.0, radius=1.0, surface area=31.41592653589793, volume=12.5663
 ```
 
 ### Extra Credit
-If you would like up to 5 points extra credit for this assignment, write unit tests for your classes.  You only need tests for the methods that calculate volume and surface area for the points.  You may include other tests if you want to, but it won't add any more points to your score.
+* If you would like up to 10 points extra credit for this assignment, have ChatGPT generate the volume and surfaceArea methods for your shapes.  You can try to have it generate the whole class, but that will probably be a bit more work manipulating the AI to do your bidding.
+* Probably the easiest way to get the AI to generate the two methods is to ask it for a shape class (Sphere, for example) and explicitly ask it to include the methods you want.  You'll also need to specify the variable names that you want it to use as well so you don't have to change anything about the two methods once they are generated.
+* As usual, to get the points, you'll need to paste the text of what you asked the AI to generate for you in a multi-line comment at the top of each of your shape classes.  The text must include a mention of the two methods (at least), as well as specifics on variable names.  The wording is up to you.
 
 ### Helpful Hints
 * Utilize the Math class for the algorithm implementations.
